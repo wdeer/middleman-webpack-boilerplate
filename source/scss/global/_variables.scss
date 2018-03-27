@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Global Variables
+   ========================================================================== */
+
+// Breakpoints
+$iphone6:                       375px;
+$iphone6-plus:                  414px;
+$ipad:                          768px;
+$ipad-pro:                      1024px;
+$desktop:                       1200px;
+$desktop-lg:                    1600px;
+$retina:                        min-resolution 1.5dppx;
+$touch:                         (pointer coarse);
+
+// Colors
+$colorMain:                     hotpink;
+$colorSecond:                   aqua;
+$colorThird:                    limegreen;
+$colorLight:                    #eee;
+$colorDark:                     #333;
+
+// Misc
+$transition:                    .3s;

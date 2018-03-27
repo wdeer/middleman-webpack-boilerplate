@@ -1,0 +1,43 @@
+site_title: "A Middleman Webpack Boilerplate"
+site_subtitle: "wiff butiful desgn"
+
+company:
+    name: ABC Co
+    address: "123 Onna Street"
+    city: "Inna City"
+    state: "AZ"
+    zipcode: "12345-6789"
+
+pages:
+  - slug: "index"
+    title: "HOME"
+    content: |
+      <h3>Configuration</h3>
+      <p>All configuration is located in either <strong>./data/main.yml</strong> or <strong>./config.rb</strong> </p>
+      <h3>Structure</h3>
+      <p><strong>./layouts/layout.erb</strong> handles the overall page structure and <strong>./templates/page.html.erb</strong> handles the per page structure generated from the "pages" array in <strong>./data/main.yml</strong></p>
+      <p>At the top of <strong>./templates/page.html.erb</strong> there are some shorter global variables for working with middleman data</p>
+      <h3>Adding Pages</h3>
+      <p>Simply add a new item to the "pages" array in <strong>./data/main.yml</strong> and it will automatically show up in the nav.</p>
+      <h3>Assets</h3>
+      <p>Middleman by default cannot see webpack's hash values so webpack is integrated into the project via <a href="https://github.com/MarsBased/middleman-webpacker">middleman-webpacker</a> with separate development and production webpack configs, located in <strong>./config/webpack/</strong></p>
+      <p>The SCSS structure should <em>hopefully</em> be rather self-explanatory</p>
+      <p>Breakpoint-sass is included in <strong>./source/scss/web.scss</strong> for simpler breakpoints</p>
+      <h3>NOTES:</h3>
+      <p>This boilerplate has not been tested extensively, so we warned. Fonts and/or images may or may not be ingested properly via webpack.. if you have a fix please commit a new branch and issue a pull request!</p>
+    sidebar: |
+      <h3>BrowserSync</h3>
+      <p>BrowserSync is set to use <strong>"Firefox Developer Edition"</strong> in <strong>./config/webpack/development.js</strong></p>
+      <h3>Jarvis</h3>
+      <p>Pay closer attention to your webpack builds with <strong>Jarvis</strong> which is included at <a href="http://localhost:1337" target="_blank">http://localhost:1337</a></p>
+
+  - slug: other-page
+    title: OTHER PAGE
+    content: |
+      <h3>TITLE</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non dignissim dolor. Sed maximus lobortis arcu, vel pharetra tortor aliquam id. Nam lorem eros, mattis nec maximus vel, pellentesque ac augue. Donec condimentum risus ut dui lobortis auctor in at tellus. Sed eros lacus, maximus ac porta a, tristique a erat. Ut ultrices aliquet orci ut tincidunt. Integer vel lobortis diam. Nulla facilisi. Quisque sit amet quam eget ex euismod pulvinar laoreet eget sapien. Proin molestie pulvinar sem id bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi iaculis elit vitae efficitur malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed nec sapien sit amet nisl gravida viverra non quis metus. Proin mattis justo augue, vel maximus nibh aliquam id.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non dignissim dolor. Sed maximus lobortis arcu, vel pharetra tortor aliquam id. Nam lorem eros, mattis nec maximus vel, pellentesque ac augue. Donec condimentum risus ut dui lobortis auctor in at tellus. Sed eros lacus, maximus ac porta a, tristique a erat. Ut ultrices aliquet orci ut tincidunt. Integer vel lobortis diam. Nulla facilisi. Quisque sit amet quam eget ex euismod pulvinar laoreet eget sapien. Proin molestie pulvinar sem id bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi iaculis elit vitae efficitur malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed nec sapien sit amet nisl gravida viverra non quis metus. Proin mattis justo augue, vel maximus nibh aliquam id.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non dignissim dolor. Sed maximus lobortis arcu, vel pharetra tortor aliquam id. Nam lorem eros, mattis nec maximus vel, pellentesque ac augue. Donec condimentum risus ut dui lobortis auctor in at tellus. Sed eros lacus, maximus ac porta a, tristique a erat. Ut ultrices aliquet orci ut tincidunt. Integer vel lobortis diam. Nulla facilisi. Quisque sit amet quam eget ex euismod pulvinar laoreet eget sapien. Proin molestie pulvinar sem id bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi iaculis elit vitae efficitur malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed nec sapien sit amet nisl gravida viverra non quis metus. Proin mattis justo augue, vel maximus nibh aliquam id.</p>
+    sidebar: |
+      <h4>SIDEBAR</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non dignissim dolor. Sed maximus lobortis arcu, vel pharetra tortor aliquam id. Nam lorem eros, mattis nec maximus vel, pellentesque ac augue. Donec condimentum risus ut dui lobortis auctor in at tellus. Sed eros lacus, maximus ac porta a, tristique a erat. Ut ultrices aliquet orci ut tincidunt. Integer vel lobortis diam. Nulla facilisi. Quisque sit amet quam eget ex euismod pulvinar laoreet eget sapien. Proin molestie pulvinar sem id bibendum.</p>

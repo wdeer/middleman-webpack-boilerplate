@@ -1,0 +1,49 @@
+{
+  "name": "middleman-webpack-boilerplate",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development ./node_modules/webpack/bin/webpack.js --watch -d --color",
+    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --bail -p",
+    "babel": {
+      "presets": [
+        "env"
+      ]
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "6.23.*",
+    "babel-core": "6.26.*",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "breakpoint-sass": "2.7.*",
+    "browser-sync": "^2.18.8",
+    "browser-sync-webpack-plugin": "^1.1.4",
+    "clean-webpack-plugin": "^0.1.18",
+    "css-loader": "^0.28.10",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.9",
+    "image-webpack-loader": "^4.1.0",
+    "img-loader": "^2.0.1",
+    "node-sass": "^4.7.2",
+    "optimize-css-assets-webpack-plugin": "^3.0.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.2",
+    "susy": "2.2.*",
+    "uglifyjs-webpack-plugin": "^1.2.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-jarvis": "^0.3.0",
+    "webpack-manifest-plugin": "^2.0.0-rc.2"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "normalize": "0.3.*",
+    "normalize-scss": "^7.0.0"
+  }
+}

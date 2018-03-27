@@ -1,0 +1,49 @@
+<%
+  $current = current_page.data
+  $page = current_page.metadata[:locals][:page]
+%>
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <% if $page['title'] %>
+    <title><%= strip_tags($page['title']).html_safe %></title>
+    <meta property="og:title" content="<%= strip_tags($page['title']).html_safe %>" />
+  <% elsif $current.page_title %>
+    <title><%= $current.page_title %></title>
+    <meta property="og:title" content="<%= $current.page_title.html_safe %>" />
+  <% else %>
+    <title><%= data.main.site_title.html_safe %></title>
+    <meta property="og:title" content="<%= data.main.site_title.html_safe %>" />
+  <% end %>
+    <meta property="og:site_name" content="<%= data.main.site_title %>"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="<%= config[:url] %>"/>
+    <meta property="og:image" content=""/>
+    <meta property="og:description" content="<%= strip_tags(data.main.site_title).html_safe.gsub("\n", " ") %>" />
+
+  <% if config[:google_font] %>
+    <link rel="stylesheet" href="<%= config[:google_font] %>" />
+  <% end %>
+    <%= stylesheet_pack_tag "main" %>
+
+  </head>
+  <body class="<%= page_classes %>">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="wrapper">
+
+    <%= yield %>
+
+    </div>
+    <%= javascript_pack_tag "main" %>
+
+    <% if config[:google_analytics] %>
+      <%= component 'google_analytics' %>
+    <% end %>
+  </body>
+</html>

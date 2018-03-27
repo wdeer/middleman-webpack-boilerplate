@@ -1,0 +1,10 @@
+footer {
+    background: saturate(adjust-hue(mix($colorMain, $colorThird),-16deg),20%); // :) so pretty
+    padding: 5em 3em;
+    color: $colorLight;
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+}

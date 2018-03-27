@@ -1,0 +1,39 @@
+nav {
+    background: $colorSecond;
+
+    ul {
+        width: 95%;
+        margin: 0;
+        padding: 0 3em;
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: flex-start;
+
+        li {
+            margin: 0;
+            padding: 0;
+
+            .navItem1 {
+                margin-left: auto;
+            }
+
+            a {
+                color:white;
+                text-decoration: none;
+                font-size: 2em;
+                transition: all .25s ease-out;
+
+                &:link,
+                &:visited {
+                    background: rgba($colorMain,.5);
+                    padding:0 1em;
+                }
+                &:hover,
+                &:active {
+                    background: rgba($colorMain,.98);
+                }
+            } // a
+        } // li
+    } // ul
+} // nav

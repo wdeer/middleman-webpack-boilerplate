@@ -1,0 +1,14 @@
+<%
+    $company = $main.company;
+%>
+
+<footer class="footer">
+    <div class="credit">
+        <p class="copyright">
+            &copy; Copyright <%= Date.today.year %> -- <%= $company.name %>
+        </p>
+        <p>
+            <%= $company.address %> <%= $company.city %>, <%= $company.zipcode %>
+        </p>
+    </div>
+</footer>

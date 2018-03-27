@@ -1,0 +1,20 @@
+header {
+    background: darken($colorMain,15%);
+    color:$colorThird;
+
+    h1 {
+        display:block;
+        width: 95%;
+        font-size: 3.5em;
+
+
+        .subtitle {
+            display: block;
+            font-size: 75%;
+            font-weight: lighter;
+        }
+
+    } // h1
+
+
+} // header

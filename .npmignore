@@ -1,0 +1,8 @@
+# Middleman
+build
+source
+.sass-cache
+config.rb
+config.ru
+Gemfile
+Gemfile.lock

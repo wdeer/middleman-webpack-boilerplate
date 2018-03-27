@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+*,*:before, *:after {
+  box-sizing: inherit;
+}
+body,html {
+   height: 100%;
+ }
+body {
+  font-family: 'Titillium Web', sans-serif;
+  margin:0;
+  background: $colorDark;
+} // body
+
+a {
+  transition: all .25s ease-in-out;
+  &:link,
+  &:visited {
+    background-color: $colorMain;
+    color:$colorLight;
+    padding:0 3px;
+    margin:0 2px;
+  }
+  &:hover,
+  &:active {
+    background-color: darken($colorMain,15%);
+  }
+} // a
+
+h3 {
+  margin: 0;
+}
+p {
+  line-height: 150%;
+  margin: .5em 0 .75em;
+}
+
+.wrapper {
+    main {
+      background: $colorThird;
+      color: $colorDark;
+      padding:2em 3em;
+    } // main
+    aside {
+      background: rgba($colorMain,.66);
+      padding:2em 3em;
+    } // aside
+} // .wrapper

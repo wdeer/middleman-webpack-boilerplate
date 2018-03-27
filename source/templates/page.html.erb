@@ -1,0 +1,22 @@
+---
+
+---
+<%
+    $main = data.main
+    $current = current_page.data
+    $page = current_page.metadata[:locals][:page]
+%>
+
+
+<%= component "header"%>
+<%= component "nav"%>
+
+<main>
+    <%= $page['content'] %>
+</main>
+
+<aside>
+    <%= $page['sidebar'] %>
+</aside>
+
+<%= component "footer"%>

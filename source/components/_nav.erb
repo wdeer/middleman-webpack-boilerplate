@@ -1,0 +1,15 @@
+<nav>
+  <ul>
+      <%
+        data.main.pages.each.each.with_index(1) do |page, index|
+        $id = strip_tags(page.title).html_safe.gsub("\n", " ")
+        $url = config[:url] + '/' + page.slug + '.html'
+      %>
+
+        <li id="<%= $id %>" class="navItem navItem<%= index %>">
+          <a href="<%= $url %>"><%= page.title %></a>
+        </li>
+
+      <% end %>
+  </ul>
+</nav>
