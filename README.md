@@ -26,7 +26,7 @@ Webpack is integrated into the middleman build workflow so only middleman comman
 * **Proxy Pages (aka Dynamic Pages):**
 **./source/templates/page.html.erb** is a template file that grabs subpage data within the  "page" array in **./data/main.yml** The configuration for this is within **./config.rb**:
 
-* ~~~~
+~~~~
 data.main.pages.each do |page|
     proxy "/#{page.slug}.html", "/templates/page.html", :locals => { :page => page }, :ignore => true
 end
