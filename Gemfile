@@ -20,7 +20,5 @@ gem 'mime-types'
 gem 'rb-fsevent', '0.9.8'
 gem 'middleman-webpacker'
 
-gem 'middleman-roadie'
-
 # For markdown
 gem 'redcarpet', '~> 3.3'
