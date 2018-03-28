@@ -1,7 +1,7 @@
 <nav>
   <ul>
       <%
-        data.main.pages.each.each.with_index(1) do |page, index|
+        data.main.pages.each.with_index(1) do |page, index|
         $id = strip_tags(page.title).html_safe.gsub("\n", " ")
         $url = config[:url] + '/' + page.slug + '.html'
       %>
