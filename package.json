@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development ./node_modules/webpack/bin/webpack.js --watch -d --color",
-    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --bail -p",
+    "start": "middleman serve",
+    "build": "middleman build",
     "babel": {
       "presets": [
         "env"
@@ -19,7 +19,6 @@
     "babel-core": "6.26.*",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
-    "breakpoint-sass": "2.7.*",
     "browser-sync": "^2.18.8",
     "browser-sync-webpack-plugin": "^1.1.4",
     "clean-webpack-plugin": "^0.1.18",
@@ -44,6 +43,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "normalize": "0.3.*",
-    "normalize-scss": "^7.0.0"
+    "normalize-scss": "^7.0.0",
+    "breakpoint-sass": "2.7.*"
   }
 }
