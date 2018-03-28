@@ -4,7 +4,7 @@
 set :url_root, 'domain.com'
 set :url, "http://" + config[:url_root]
 set :google_analytics, nil
-set :site_author, 'Svenn Dearshun'
+set :site_author, 'Jahn Doh'
 
 set :google_font, 'https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700|Playfair+Display:400,700,900'
 
